@@ -5,4 +5,4 @@ const babelConfig = {
   ],
 };
 
-module.export = babelConfig;
+module.exports = babelConfig;

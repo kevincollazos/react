@@ -23,18 +23,18 @@ const CounterApp = ({number}) => {
            CounterApp
           </div>
     
-          <p> prop: {number} </p>
-          <p> counter: {count} </p>
+          <p data-testid="test-number-default">{number}</p>
+          <p data-testid="test-counter">{count}</p>
 
-          <button className="button" onClick={ sumale }>sumale kbron</button>
-          <button className="button" onClick={ restale }>restale kbron</button>
-          <button className="button" onClick={ resetFunc }>reseteame kbron</button>
+          <button data-testid="sumale-kbron" className="button" onClick={ sumale }>sumale kbron</button>
+          <button data-testid="restale-kbron" className="button" onClick={ restale }>restale kbron</button>
+          <button data-testid="reseteame-kbron" className="button" onClick={ resetFunc }>reseteame kbron</button>
         </>
       )
     }
     
   CounterApp.propTypes = {
-    number: PropTypes.number,
+    number: PropTypes.number.isRequired,
   }
   
   CounterApp.defaultProps = {

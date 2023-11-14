@@ -12,7 +12,7 @@ const App = ({content}) => {
         Hola mundo { saludo() }
       </div>
 
-      <p>{content}</p>
+      <p data-testid="data-id">{content}</p>
     </>
   )
 }
